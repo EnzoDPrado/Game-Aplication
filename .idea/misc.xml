@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.4185" />
+        <entry key="app/src/main/res/drawable/box_purple.xml" value="0.4185" />
+        <entry key="app/src/main/res/drawable/ic_above_wave.xml" value="0.4185" />
+        <entry key="app/src/main/res/drawable/ic_anonymous_background.xml" value="0.2075" />
+        <entry key="app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.1505" />
+        <entry key="app/src/main/res/drawable/ic_email.xml" value="0.4185" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.4185" />
+        <entry key="app/src/main/res/drawable/ic_line_9.xml" value="0.4185" />
+        <entry key="app/src/main/res/drawable/ic_password.xml" value="0.4185" />
+        <entry key="app/src/main/res/drawable/ic_person.xml" value="0.1475" />
+        <entry key="app/src/main/res/drawable/ic_purple_line.xml" value="0.4185" />
+        <entry key="app/src/main/res/drawable/ic_under_wave.xml" value="0.4185" />
+        <entry key="app/src/main/res/drawable/ic_wave__4_.xml" value="0.4185" />
+        <entry key="app/src/main/res/drawable/infos_box.xml" value="0.4185" />
+        <entry key="app/src/main/res/drawable/leve_box.xml" value="0.4185" />
+        <entry key="app/src/main/res/drawable/perfil_box.xml" value="0.4185" />
+        <entry key="app/src/main/res/layout/activity_account_infos.xml" value="0.55" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.5760416666666667" />
+        <entry key="app/src/main/res/layout/activity_new_account.xml" value="0.5058823529411764" />
+        <entry key="app/src/main/res/menu/menu_new_user.xml" value="0.5192708333333333" />
+        <entry key="app/src/main/res/xml/menu_new_user.xml" value="0.5192708333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

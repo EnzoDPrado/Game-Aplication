@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GamesApplication</string>
+    <string name="chose_picturee">Shall we chose a picture?</string>
+    <string name="data">Authentication data</string>
+    <string name="whatsName">What\'s your name?</string>
+    <string name="WhatsCity">What\'s your city?</string>
+    <string name="dataPersonal">Personal data</string>
+    <string name="password">Password</string>
+    <string name="mail">Email</string>
+    <string name="birthDate">What\'s your date of birth?</string>
+    <string name="female">Female</string>
+    <string name="masculine">Masculine</string>
+    <string name="newAccount">New Account</string>
+    <string name="gamerLevel">What\'s your gamer level?</string>
+    <string name="favoriteConsole">What\'s your favorite console?</string>
+    <string name="ds2m">Developed by DS2M</string>
+    <string name="games_text">Games</string>
+    <string name="games_finished">Games Finished</string>
+    <string name="currently_playing">Currently Playing</string>
+    <string name="age">Age</string>
+    <string name="registered_games">Your registered games</string>
+</resources>
