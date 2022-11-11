@@ -19,4 +19,13 @@
     <string name="currently_playing">Currently Playing</string>
     <string name="age">Age</string>
     <string name="registered_games">Your registered games</string>
+
+
+    <string-array name="consoles">
+        <item>PlayStation 5</item>
+        <item>Xbox One</item>
+        <item>Xbox Series</item>
+        <item>Nintendo Switch</item>
+        <item>Playstation 4</item>
+    </string-array>
 </resources>

@@ -28,8 +28,9 @@
         android:hint="@string/password"
         android:inputType="textEmailAddress"
         android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxLogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmailLogin" />
 
@@ -58,6 +59,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:background="@drawable/ic_above_wave"
@@ -86,9 +88,12 @@
         android:textColor="#5900D2"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <TextView
         android:id="@+id/textView3"
@@ -96,7 +101,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="With our app it will be much easier and more fun to keep track of your games "
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmailLogin"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_welcome" />
 
@@ -106,6 +113,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Lembre-se"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLoggin"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress2"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
 
@@ -117,7 +125,9 @@
         android:background="#009BFF"
         android:backgroundTint="#009BFF"
         android:text="Entrar"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCreate"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxLogin" />
 
@@ -126,7 +136,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
         android:text="Crie uma conta"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
         app:layout_constraintEnd_toEndOf="@+id/buttonLoggin"
         app:layout_constraintTop_toBottomOf="@+id/buttonLoggin" />
 
@@ -152,7 +164,9 @@
         android:hint="@string/mail"
         android:inputType="textEmailAddress"
         android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 

@@ -5,11 +5,17 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import br.senai.sp.jandeira.gamesapplication.databinding.ActivityMainBinding
+import br.senai.sp.jandeira.gamesapplication.databinding.ActivityNewAccountBinding
 
 class newAccount : AppCompatActivity() {
+    private lateinit var binding: ActivityNewAccountBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_new_account)
+        binding = ActivityNewAccountBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.seekBarRegister.value = gameLevel()
     }
 
 
@@ -27,6 +33,11 @@ class newAccount : AppCompatActivity() {
 
     }
 
+    private fun gameLevel(value: Int): String {
+        if(value == 1)
+            return "Noob"
+    }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
 
         val inflater = menuInflater
@@ -34,4 +45,6 @@ class newAccount : AppCompatActivity() {
 
         return true;
     }
+
+
 }
