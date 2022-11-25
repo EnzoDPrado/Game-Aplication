@@ -8,11 +8,15 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "tbl_console")
 class Console {
 
-    @PrimaryKey(autoGenerate = true ) var id = 0
-    var codigo = 0;
-    var nome = "";
-    var fabricante = "";
-    var descricao = "";
-    var foto:Bitmap? = null;
-    var anoLancamento = 0;
+    @PrimaryKey(autoGenerate = true )
+    var consoleId = 0
+
+    var consoleCodigo = 0;
+    var consoleNome = "";
+    var consoleFabricante = "";
+    var consoleDescricao = "";
+    var consoleFoto:ByteArray? = null;
+
+    var consoleAnoLancamento = 0;
+
 }

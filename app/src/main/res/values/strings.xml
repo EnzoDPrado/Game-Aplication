@@ -19,6 +19,8 @@
     <string name="currently_playing">Currently Playing</string>
     <string name="age">Age</string>
     <string name="registered_games">Your registered games</string>
+    <string name="name_criar" />
+    <string name="name_create">CRIAR</string>
 
 
     <string-array name="consoles">

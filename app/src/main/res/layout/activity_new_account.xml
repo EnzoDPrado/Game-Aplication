@@ -183,7 +183,6 @@
                 android:id="@+id/spinner"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:entries="@array/consoles"
                 app:layout_constraintBottom_toTopOf="@+id/textView10"
                 app:layout_constraintEnd_toEndOf="@+id/editTextTextBirth"
                 app:layout_constraintHorizontal_bias="0.5"

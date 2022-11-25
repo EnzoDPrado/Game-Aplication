@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ArrayAdapter
 import android.widget.Toast
 import br.senai.sp.jandeira.gamesapplication.databinding.ActivityMainBinding
 import br.senai.sp.jandeira.gamesapplication.databinding.ActivityNewAccountBinding
+import br.senai.sp.jandeira.gamesapplication.repository.ConsoleRepository
 
 class newAccount : AppCompatActivity() {
     private lateinit var binding: ActivityNewAccountBinding
@@ -15,7 +17,9 @@ class newAccount : AppCompatActivity() {
         binding = ActivityNewAccountBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.seekBarRegister.value = gameLevel()
+        setupSpinner();
+
+//        binding.seekBarRegister.value = gameLevel()
     }
 
 
@@ -33,10 +37,15 @@ class newAccount : AppCompatActivity() {
 
     }
 
-    private fun gameLevel(value: Int): String {
-        if(value == 1)
-            return "Noob"
+    private fun setupSpinner() {
+        val list = ConsoleRepository(this).getAll().map { item -> item.consoleNome }
+        binding.spinner.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, list)
     }
+
+//    private fun gameLevel(value: Float): String {
+//        if(value == )
+//            return "Noob"
+//    }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
 

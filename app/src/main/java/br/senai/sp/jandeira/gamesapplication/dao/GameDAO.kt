@@ -7,10 +7,10 @@ import br.senai.sp.jandeira.gamesapplication.model.User
 
 @Dao
 interface GameDAO{
-    @Query("SELECT * FROM tbl_game ORDER BY titulo ASC")
+    @Query("SELECT * FROM tbl_game ORDER BY gameTitulo ASC")
     fun getAll(): List<Game>;
 
-    @Query("SELECT * FROM tbl_game where id = :id")
+    @Query("SELECT * FROM tbl_game where gameId = :id")
     fun getGameById(id:Int):Game;
 
     @Update
