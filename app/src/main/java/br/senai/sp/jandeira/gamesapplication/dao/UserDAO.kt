@@ -26,6 +26,6 @@ interface UserDAO{
     fun delete(user:User): Int;
 
     @Query("SELECT * FROM tbl_user WHERE userEmail = :email")
-    fun getUserByEmail(email:String):String
+    fun getUserByEmail(email:String):User
 
 }

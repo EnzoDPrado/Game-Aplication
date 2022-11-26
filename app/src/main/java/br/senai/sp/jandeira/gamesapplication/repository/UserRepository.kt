@@ -32,7 +32,7 @@ class UserRepository(context:Context){
         return db.delete(user);
     }
 
-    fun getUserByEmail(email:String):String{
+    fun getUserByEmail(email:String):User{
         return db.getUserByEmail(email);
     }
 
