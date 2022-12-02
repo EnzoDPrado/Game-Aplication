@@ -21,7 +21,7 @@ import java.io.ByteArrayOutputStream
 
 class newAccount : AppCompatActivity() {
     private lateinit var binding: ActivityNewAccountBinding
-    private lateinit var pictureBitmap:Bitmap;
+    private var pictureBitmap: Bitmap? = null;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityNewAccountBinding.inflate(layoutInflater)
@@ -148,11 +148,16 @@ class newAccount : AppCompatActivity() {
             }
         }
 
-
         if (binding.radioGroup.checkedRadioButtonId.toString().isEmpty()) {
             Toast.makeText(this, "Preencha o campo de genero", Toast.LENGTH_SHORT).show()
             return false
         }
+
+        if (pictureBitmap == null) {
+            Toast.makeText(this, "Foto requirida", Toast.LENGTH_SHORT).show()
+            return false
+        }
+
 
         return validate;
     }

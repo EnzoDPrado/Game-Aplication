@@ -47,16 +47,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="0dp"
-        android:layout_height="75dp"
-        android:background="@drawable/ic_above_wave"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
     <ImageView
         android:id="@+id/imageGame"
         android:layout_width="100dp"
@@ -84,13 +74,14 @@
     <EditText
         android:id="@+id/ediTextGame"
         android:layout_width="0dp"
-        android:layout_height="30dp"
+        android:layout_height="45dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/box_purple"
         android:ems="10"
         android:hint="@string/text_name_game"
         android:inputType="textPersonName"
+        android:paddingStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView22"
         app:layout_constraintTop_toBottomOf="@+id/textView22" />
@@ -98,12 +89,13 @@
     <EditText
         android:id="@+id/editTextGameDescription"
         android:layout_width="0dp"
-        android:layout_height="30dp"
+        android:layout_height="45dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/box_purple"
         android:ems="10"
         android:hint="@string/text_game_description"
         android:inputType="textPersonName"
+        android:paddingStart="10dp"
         app:layout_constraintEnd_toEndOf="@+id/ediTextGame"
         app:layout_constraintStart_toStartOf="@+id/ediTextGame"
         app:layout_constraintTop_toBottomOf="@+id/ediTextGame" />
@@ -111,7 +103,7 @@
     <EditText
         android:id="@+id/editTextGameStudio"
         android:layout_width="0dp"
-        android:layout_height="30dp"
+        android:layout_height="45dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/box_purple"
         android:ems="10"
@@ -124,7 +116,7 @@
     <EditText
         android:id="@+id/editTextGameRelease"
         android:layout_width="0dp"
-        android:layout_height="30dp"
+        android:layout_height="45dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/box_purple"
         android:ems="10"
@@ -139,7 +131,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="@string/text_complete_game"
         android:textColor="#5000C9"
         android:textSize="18sp"
         android:textStyle="bold"

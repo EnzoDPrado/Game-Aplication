@@ -20,7 +20,7 @@ import java.io.ByteArrayOutputStream
 
 class activity_register_game : AppCompatActivity() {
     lateinit var binding: ActivityRegisterGameBinding;
-    private lateinit var pictureBitmap:Bitmap;
+    private  var pictureBitmap:Bitmap? = null;
     private var userId = 0;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
@@ -66,6 +66,7 @@ class activity_register_game : AppCompatActivity() {
             binding.editTextGameDescription.text.toString(),
             binding.editTextGameStudio.text.toString(),
             binding.editTextGameRelease.text.toString(),
+
         );
 
         val inputRadio = binding.radioGroup.checkedRadioButtonId
@@ -98,6 +99,11 @@ class activity_register_game : AppCompatActivity() {
         if(binding.radioGroup.checkedRadioButtonId.toString().isEmpty()){
             Toast.makeText( this, "Preencha se você terminou o jogo!", Toast.LENGTH_SHORT).show()
             return false;
+        }
+
+        if (pictureBitmap == null) {
+            Toast.makeText(this, "Foto requirida", Toast.LENGTH_SHORT).show()
+            return false
         }
 
         return validate;
